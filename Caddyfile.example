@@ -1,0 +1,31 @@
+mrlgoods.com {
+  root * /usr/local/www/mrlgoods.com
+  encode zstd gzip
+  file_server
+
+  php_fastcgi unix//var/run/php-fpm.sock
+
+  @forbidden {
+    path /.env*
+    path /composer.*
+    path /README.md
+    path /data/*
+  }
+  respond @forbidden 403
+
+  header {
+    X-Frame-Options "DENY"
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy "strict-origin-when-cross-origin"
+    Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy "default-src 'self'; img-src 'self' https://files.stripe.com data:; script-src 'self'; style-src 'self'; connect-src 'self' https://api.stripe.com; frame-src https://checkout.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'none'"
+  }
+
+  @notStatic {
+    file {
+      try_files {path} {path}/ /index.html
+    }
+  }
+  rewrite @notStatic {http.matchers.file.relative}
+}

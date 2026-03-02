@@ -1,0 +1,8 @@
+{
+  "name": "muddy-river-leather/site",
+  "description": "Static-first leatherworking business website with PHP APIs for Stripe and contact forms.",
+  "type": "project",
+  "require": {
+    "stripe/stripe-php": "^16.0"
+  }
+}

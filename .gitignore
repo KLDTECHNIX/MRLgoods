@@ -1,0 +1,6 @@
+.env
+vendor/
+composer.lock
+data/contact-submissions.log
+*.log
+.DS_Store
