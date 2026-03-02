@@ -1,0 +1,13 @@
+PLACEHOLDER IMAGE FILE
+======================
+
+This repository intentionally stores a text placeholder at this path because
+some review/CI systems reject or strip binary files.
+
+Replace this file with the real logo PNG:
+  assets/logo/muddy-river-leather.png
+
+Recommended export:
+- Width: 1200px+
+- Transparent background
+- Optimized PNG (lossless)
