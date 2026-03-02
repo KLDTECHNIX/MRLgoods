@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Muddy River Leather</title>
+  <meta name="description" content="Shop handcrafted leather goods from Muddy River Leather.">
+  <link rel="canonical" href="https://mrlgoods.com/products/">
+  <meta property="og:title" content="Products | Muddy River Leather">
+  <meta property="og:description" content="Shop handcrafted leather goods from Muddy River Leather.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrlgoods.com/products/">
+  <meta property="og:image" content="https://mrlgoods.com/assets/logo/muddy-river-leather.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script defer src="/global-scripts/global.js"></script>
+  <script defer src="/products/scripts/products.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="Muddy River Leather home"><img src="/assets/logo/muddy-river-leather.png" alt="Muddy River Leather logo" width="290" height="80"></a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary" data-site-nav>
+        <a href="/">Home</a><a href="/products/" class="active">Products</a><a href="/about-us/">About Us</a><a href="/contact-us/">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container" data-reveal>
+      <h1>Shop Products</h1>
+      <p>Products are loaded live from Stripe so inventory and pricing stay accurate.</p>
+      <div id="products-feedback" class="notice" role="status" aria-live="polite">Loading products...</div>
+      <div id="products-grid" class="grid grid--3 product-grid" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="container site-footer__copy">© <span data-year></span> Muddy River Leather. All rights reserved.</p>
+  </footer>
+</body>
+</html>

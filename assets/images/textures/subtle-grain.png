@@ -1,0 +1,7 @@
+PLACEHOLDER TEXTURE FILE
+========================
+
+Replace with a subtle seamless grain texture PNG:
+  assets/images/textures/subtle-grain.png
+
+Keep it lightweight (tileable, <= 40KB recommended).
